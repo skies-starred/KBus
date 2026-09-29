@@ -5,7 +5,7 @@ plugins {
 
 val projectName = "kbus"
 val projectGroup = "foo.starred"
-val projectVersion = "2026.09.2"
+val projectVersion = "2026.09.3"
 
 group = projectGroup
 version = projectVersion
