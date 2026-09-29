@@ -6,7 +6,7 @@ import foo.starred.kbus.data.event.base.KBusEvent
 import foo.starred.kbus.data.node.KBusNode
 import java.util.concurrent.ConcurrentHashMap
 
-abstract class KBus {
+open class KBus {
     val all = ConcurrentHashMap<Class<out KBusEvent>, Array<KBusNode<out KBusEvent>>>()
 
     fun <T : KBusEvent> post(event: T) {
